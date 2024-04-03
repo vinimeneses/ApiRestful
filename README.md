@@ -1,45 +1,68 @@
-# Spring Boot RESTful Web Services
+# Spring Boot Restful Web Services
 
-This project is a simple implementation of RESTful Web Services using Spring Boot, Java, and Maven. It provides basic CRUD (Create, Read, Update, Delete) operations for a `User` entity.
+This is a demo project for Spring Boot Restful Web Services.
 
-## Technologies Used
+## Description
 
-- Java
-- Spring Boot
-- Maven
-- MySQL
+This project is a demonstration of a RESTful API using Spring Boot. It includes a variety of dependencies such as Spring Boot Data JPA, Spring Boot Starter Web, MySQL Connector, Lombok, and more.
 
 ## Features
 
-The project provides the following endpoints:
+The application provides the following features:
 
-- `POST /api/users`: Create a new user
-- `GET /api/users/{id}`: Retrieve a user by ID
-- `GET /api/users`: Retrieve all users
-- `PUT /api/users/{id}`: Update a user by ID
-- `DELETE /api/users/{id}`: Delete a user by ID
+- CRUD operations on User entities.
+- Validation of User data.
+- Error handling for invalid data and server errors.
+- API documentation using Swagger.
 
-## Setup
+## Technologies Used
+
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Spring Boot Starter Web
+- MySQL Connector
+- Lombok
+- ModelMapper
+- Spring Boot Starter Validation
+- Spring Boot Starter Actuator
+- Spring Boot Devtools
+- Springdoc OpenAPI UI
+
+## Getting Started
+
+### Prerequisites
+
+- Java 17
+- Maven
+- MySQL
+
+### Installing
 
 1. Clone the repository
-2. Update the `src/main/resources/application.properties` file with your MySQL database name, username, and password:
+2. Navigate to the project directory
+3. Run `mvn clean install` to build the project
 
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-```
+### Running the application
 
-3. Run the application using Maven:
+Run `mvn spring-boot:run` to start the application
 
-```bash
-mvn spring-boot:run
-```
+## Usage
 
-The application will start running at `http://localhost:8080`.
+The application exposes a variety of endpoints for manipulating User entities. The full API documentation can be found at `http://localhost:8080/swagger-ui.html` when the application is running.
 
-## Contributing
+## API Endpoints
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+- `GET /users`: Fetch all users
+- `GET /users/{id}`: Fetch a user by ID
+- `POST /users`: Create a new user
+- `PUT /users/{id}`: Update a user
+- `DELETE /users/{id}`: Delete a user
 
-Please make sure to update tests as appropriate.
+## Contact
+
+For any queries, please reach out to Vinícius Meneses at viniciusmenesesdev@gmail.com or visit [GitHub](https://github.com/vinimeneses).
+
+## License
+
+This project is licensed under the Apache 2.0 License - see the [LICENSE](http://www.apache.org/licenses/LICENSE-2.0.html) file for details.
