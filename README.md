@@ -1,6 +1,6 @@
 # Spring Boot Restful Web Services
 
-This is a demo project for Spring Boot Restful Web Services.
+This is a project for Spring Boot Restful Web Services.
 
 ## Description
 
